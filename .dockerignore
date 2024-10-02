@@ -1,0 +1,59 @@
+#  This file is a .dockerignore file used in a Django Boilerplate project.
+#  It specifies the files and directories that should be ignored by Docker when building the project's image.
+#  
+#  The following patterns are ignored:
+#  - *.pyc: Python compiled files
+#  - *.pyo: Python optimized files
+#  - *.mo: Compiled message files
+#  - *.db: Database files
+#  - *.css.map: CSS map files
+#  - *.egg-info: Python package information files
+#  - *.sql.gz: Compressed SQL files
+#  - .cache: Cache directory
+#  - .project: Eclipse project file
+#  - .idea: IntelliJ IDEA project directory
+#  - .pydevproject: PyDev project file
+#  - .idea/workspace.xml: IntelliJ IDEA workspace file
+#  - .DS_Store: macOS directory metadata file
+#  - .git/: Git directory
+#  - .sass-cache: Sass cache directory
+#  - .vagrant/: Vagrant directory
+#  - __pycache__: Python cache directory
+#  - dist: Distribution directory
+#  - docs: Documentation directory
+#  - env: Virtual environment directory
+#  - logs: Log directory
+#  - src/{{ project_name }}/settings/local.py: Local settings file
+#  - src/node_modules: Node.js modules directory
+#  - web/media: Media directory
+#  - web/static/CACHE: Cached static files directory
+#  - stats: Statistics directory
+#  - Dockerfile: Dockerfile
+
+*.pyc
+*.pyo
+*.mo
+*.db
+*.css.map
+*.egg-info
+*.sql.gz
+.cache
+.project
+.idea
+.pydevproject
+.idea/workspace.xml
+.DS_Store
+.git/
+.sass-cache
+.vagrant/
+__pycache__
+dist
+docs
+env
+logs
+src/{{ project_name }}/settings/local.py
+src/node_modules
+web/media
+web/static/CACHE
+stats
+Dockerfile

@@ -1,6 +1,7 @@
 # Variables:
 PYTHON := poetry run python
 MANAGE := $(PYTHON) manage.py
+DOCKER := docker compose -f docker-compose.local.yaml 
 
 # Default target
 .DEFAULT_GOAL := help
@@ -19,6 +20,13 @@ help:
 	@echo "  superuser       Create Django superuser"
 	@echo "  requirements    Create requirements.txt"
 	@echo "  collectstatic   Collect static files"
+	@echo "  secret          Generate secret key"
+	@echo "  docker-build    Build Docker containers"
+	@echo "  docker-up       Start Docker containers"
+	@echo "  docker-down     Stop Docker containers"
+	@echo "  docker-down-v   Stop Docker containers and remove volumes"
+	@echo "  docker-show-logs Show Docker logs"
+
 
 runserver:
 	@echo "Running Django server..."
@@ -55,3 +63,23 @@ collectstatic:
 secret:
 	@echo "Generating secret key..."
 	$(PYTHON) -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+
+# Docker targets
+
+
+docker-build:
+	$(DOCKER) up --build -d --remove-orphans
+
+docker-up:
+	$(DOCKER) up -d
+
+docker-down:
+	$(DOCKER) down
+
+docker-down-v:
+	$(DOCKER) down -v
+
+docker-show-logs:
+	$(DOCKER) logs -f
+
+.PHONY: help runserver migrate makemigrations shell test superuser requirements collectstatic secret docker-build docker-up docker-down docker-down-v docker-show-logs
