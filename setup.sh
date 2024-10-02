@@ -1,7 +1,7 @@
 #!/bin/sh
 : '
 #!/usr/bin/env pwsh
-<#'
+<# '
 # Bash version
 echo "Setting up Django project (Bash version)"
 
