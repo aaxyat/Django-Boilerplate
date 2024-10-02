@@ -32,10 +32,10 @@ if ! mkdir -p .vscode; then
 fi
 
 # Download .gitignore to .vscode directory
-download_file "$BASE_URL/.vscode/.gitignore" ".vscode/.gitignore"
+download_file "$BASE_URL/.vscode.gitignore" ".vscode/.gitignore"
 
 # Download settings.json to .vscode directory
-download_file "$BASE_URL/.vscode/settings.json" ".vscode/settings.json"
+download_file "$BASE_URL/.vscode.settings.json" ".vscode/settings.json"
 
 echo "Setup complete!"
 exit 0
@@ -80,10 +80,10 @@ catch {
 }
 
 # Download .gitignore to .vscode directory
-Download-File -Url "$BASE_URL/.vscode/.gitignore" -Output ".vscode/.gitignore"
+Download-File -Url "$BASE_URL/.vscode.gitignore" -Output ".vscode/.gitignore"
 
 # Download settings.json to .vscode directory
-Download-File -Url "$BASE_URL/.vscode/settings.json" -Output ".vscode/settings.json"
+Download-File -Url "$BASE_URL/.vscode.settings.json" -Output ".vscode/settings.json"
 
 Write-Output "Setup complete!"
 exit 0

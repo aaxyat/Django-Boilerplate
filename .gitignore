@@ -161,10 +161,17 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-#Django Static Files
+# Django Static Files
 staticfiles/*
 !staticfiles/.gitignore
 
-#Django Media Files
+# Django Media Files
 media/*
 !media/.gitignore
+
+# Vscode configs
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/.gitignore
