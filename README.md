@@ -16,7 +16,8 @@ Here are some things we are looking to implement in this project.
 
 1. Implement industry standard black configuration in pyproject.toml.
 2. Create Prettier and eslint for JavaScript code.
-3. Write custom vscode settings.json 
+3. ~~Write custom vscode settings.json~~
+4. Expand settings.json to include more settings.
 
 
 ## 🚀 Quick Start
