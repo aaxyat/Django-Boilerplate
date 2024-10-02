@@ -1,46 +1,69 @@
-# Django Boilerplate Setup Script
+# 🚀 Django Boilerplate
 
-![Django Logo](https://www.djangoproject.com/m/img/logos/django-logo-negative.png)
+Welcome to the Django Boilerplate project! This template provides a solid foundation for your Django projects, complete with a convenient setup script and essential configurations.
 
+## 🌟 Features
 
+- 📁 Pre-configured project structure
+- 🐳 Docker support
+- 🛠 VS Code settings
+- 📝 Customized `.gitignore` and `.dockerignore`
+- 🔧 Makefile for common operations
 
-## 🚀 Overview
+## 🚀 Quick Start
 
-This script streamlines the setup process for new Django projects by automatically copying essential configuration files. These files are fundamental for each project, ensuring that your development environment is properly configured from the outset. With this tool, you can quickly establish a solid foundation for your Django applications, allowing you to focus on coding rather than configuration.
+Getting started with this Django Boilerplate is as easy as running a single command! Choose the appropriate command for your operating system:
 
-## 📥 Features
+### 🐧 Linux / 🍎 macOS
 
-- Uses the correct base URL for your GitHub repository.
-- Implements error handling for both Bash and PowerShell.
-- Checks for errors when creating the `.vscode` directory.
-- Downloads essential files for your Django project.
+```bash
+curl -sSL https://l.ayushb.com/django | bash
+```
 
-## ⚙️ Usage
+### 🪟 Windows (PowerShell)
 
-Run the script using the following commands:
+```powershell
+iwr https://l.ayushb.com/django | iex
+```
 
-- **On Linux/macOS**:
-  ```bash
-  curl -sSL l.ayushb.com/django | bash
-  ```
+This command will:
+1. Download the setup script
+2. Execute the script, which will:
+   - Create necessary directories
+   - Download configuration files
+   - Set up your Django project structure
 
-- **On Windows**:
-  ```powershell
-  iwr l.ayushb.com/django | iex
-  ```
+## 📁 Project Structure
 
-## ⚠️ Important Notes
+After running the setup script, your project structure will look like this:
 
-- The script will overwrite any existing files with the same names in the current directory.
-- If any step fails, an error message will be displayed, and the script will exit with a non-zero status code.
+```
+your-project/
+├── .vscode/
+│   ├── .gitignore
+│   └── settings.json
+├── .gitignore
+├── .dockerignore
+├── Dockerfile
+└── Makefile
+```
 
-## 🎉 Conclusion
+## 🛠 Customization
 
-This script provides a streamlined and efficient way to establish a robust foundation for your Django projects. By automating the setup of essential configuration files, it reduces the time and effort typically required for initial project configuration. With comprehensive error handling and support for both Bash and PowerShell environments, this tool ensures a smooth setup experience, allowing developers to focus on building their applications rather than getting bogged down in setup challenges. Embrace the ease of use and reliability this script offers, and jumpstart your Django development journey today!
+Feel free to modify any of the downloaded files to suit your specific project needs. The boilerplate provides a starting point, but you have full control to customize it further.
 
+## 🤝 Contributing
+
+Contributions to improve this boilerplate are welcome! Please feel free to submit pull requests or open issues on the [GitHub repository](https://github.com/aaxyat/Django-Boilerplate).
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgements
+
+This boilerplate was created by [Aaxyat Bhattarai](https://github.com/aaxyat) to help Django developers kickstart their projects quickly and efficiently.
 
 ---
 
-### 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Happy coding! If you find this boilerplate helpful, please consider giving it a star on GitHub. ⭐
