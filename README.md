@@ -19,10 +19,6 @@ Here are some things we are looking to implement in this project.
 3. Write custom vscode settings.json 
 
 
-
-
-
-
 ## 🚀 Quick Start
 
 Getting started with this Django Boilerplate is as easy as running a single command! Choose the appropriate command for your operating system:
