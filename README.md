@@ -10,6 +10,19 @@ Welcome to the Django Boilerplate project! This template provides a solid founda
 - 📝 Customized `.gitignore` and `.dockerignore`
 - 🔧 Makefile for common operations
 
+## 📝 Todo
+
+Here are some things we are looking to implement in this project. 
+
+1. Implement industry standard black configuration in pyproject.toml.
+2. Create Prettier and eslint for JavaScript code.
+3. Write custom vscode settings.json 
+
+
+
+
+
+
 ## 🚀 Quick Start
 
 Getting started with this Django Boilerplate is as easy as running a single command! Choose the appropriate command for your operating system:
