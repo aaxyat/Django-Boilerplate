@@ -23,6 +23,7 @@ download_file "$BASE_URL/Makefile" "Makefile"
 download_file "$BASE_URL/.gitignore" ".gitignore"
 download_file "$BASE_URL/.dockerignore" ".dockerignore"
 download_file "$BASE_URL/Dockerfile" "Dockerfile"
+download_file "$BASE_URL/pyproject.toml" "pyproject.toml"
 
 # Create .vscode directory if it doesn't exist
 if ! mkdir -p .vscode; then
@@ -66,6 +67,8 @@ Download-File -Url "$BASE_URL/Makefile" -Output "Makefile"
 Download-File -Url "$BASE_URL/.gitignore" -Output ".gitignore"
 Download-File -Url "$BASE_URL/.dockerignore" -Output ".dockerignore"
 Download-File -Url "$BASE_URL/Dockerfile" -Output "Dockerfile"
+Download-File -Url "$BASE_URL/pyproject.toml" -Output "pyproject.toml"
+
 
 # Create .vscode directory if it doesn't exist
 try {
